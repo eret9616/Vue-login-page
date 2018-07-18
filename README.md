@@ -1,4 +1,4 @@
-# Vue.js表单输入验证
+# Vue.js登录表单
 
 
-## Node ./server/server.js
+启动服务器: node  ./server/server.js
