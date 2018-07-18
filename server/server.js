@@ -25,11 +25,11 @@ const server = http.createServer((req, res) => {
             data = data.toString();
             var dataObj = querystring.parse(data, null, null)
 
-            // console.log(dataObj);
+             console.log(dataObj);
 
             res.writeHead(200, { 'Content-type': 'text/html;charset=UTF-8' })
 
-            if (dataObj.username === mock.username && dataObj.password === mock.password) {
+            if (dataObj.username == mock.username && dataObj.password == mock.password) {
                 res.end(`<h1>登陆成功</h1>`)
             }
             else {

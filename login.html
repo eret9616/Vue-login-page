@@ -8,6 +8,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./public/lib/bootstrap.css">
     <link rel="stylesheet" href="./public/css/main.css">
+    <style>
+        .container-small {
+            max-width: 300px;
+            padding: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,8 +35,7 @@
 
             <div class='form-group'>
                 <label>服务密码</label>
-                <input type="password" name='password' class="form-control" v-model='password'> {{password}}
-                <span class='text-danger'>{{validator}}</span>
+                <input type="password" name='password' class="form-control" v-model='password'>
             </div>
 
 
@@ -57,7 +62,6 @@
             warning: '',
 
             password: '',
-            validator: ''
 
         },
         computed: {
